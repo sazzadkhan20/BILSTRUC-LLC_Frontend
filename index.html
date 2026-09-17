@@ -7,16 +7,17 @@
   <meta name="theme-color" content="#1C2335">
   <title>BILSTRUC LLC | Property Maintenance & Preservation</title>
   <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="preload" as="image" href="assets/images/landing.jpg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
       <a class="brand" href="#home" aria-label="BILSTRUC LLC home">
-        <img src="assets/images/logo.png" alt="BILSTRUC LLC">
+        <img src="assets/images/logo.png" alt="BILSTRUC LLC" width="280" height="280" decoding="async">
       </a>
 
       <nav class="nav" id="primaryNav" aria-label="Primary">
@@ -40,7 +41,7 @@
     <!-- Hero -->
     <section class="hero" id="home">
       <div class="hero-media" aria-hidden="true">
-        <img src="assets/images/landing.jpg" alt="" width="1376" height="768">
+        <img src="assets/images/landing.jpg" alt="" width="1600" height="894" fetchpriority="high" decoding="async">
         <div class="hero-overlay"></div>
       </div>
 
@@ -49,7 +50,7 @@
         <h1 class="hero-title">Your trusted partner in property care</h1>
         <p class="hero-text">
           BILSTRUC LLC delivers dependable property maintenance and preservation—
-          protecting curb appeal, structure, and value for homes and investment properties.
+          from landscaping and interior cleaning to condition checks and initial services.
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#services">Our Services</a>
@@ -63,128 +64,86 @@
     <!-- Services -->
     <section class="section services" id="services">
       <div class="container">
-        <div class="section-head reveal">
+        <div class="section-head services-head reveal">
           <p class="section-label">What we do</p>
-          <h2 class="section-title">Complete solutions we provide</h2>
+          <h2 class="section-title">Focused services we provide</h2>
           <p class="section-lead">
-            From everyday upkeep to targeted repairs, BILSTRUC LLC keeps properties
-            presentable, secure, and ready for occupancy.
+            Four essential property care services, delivered with clear communication
+            and lasting presentation in mind.
           </p>
         </div>
 
-        <div class="services-grid">
-          <article class="service-card featured reveal">
-            <img src="assets/images/grass-cut.jpg" alt="Freshly maintained lawn and landscaping">
-            <div class="service-body">
-              <h3>Landscaping</h3>
-              <p>Keep lawns, beds, and exterior grounds neat so every property makes a strong first impression.</p>
+        <article class="service-row reveal">
+          <div class="service-copy">
+            <div class="service-meta">
+              <span class="service-num">01</span>
+              <span class="service-rule" aria-hidden="true"></span>
             </div>
-          </article>
+            <h3>Landscaping</h3>
+            <p>
+              Keep lawns, beds, and exterior grounds neat so every property makes a strong
+              first impression with clean, practical outdoor care that protects curb appeal.
+            </p>
+            <a class="service-link" href="#contact">Request this service</a>
+          </div>
+          <figure class="service-media">
+            <img src="assets/images/grass-cut.jpg" alt="Professional landscaping and lawn care" width="1100" height="756" loading="lazy" decoding="async">
+          </figure>
+        </article>
 
-          <article class="service-card reveal">
-            <img src="assets/images/trash-out.jpg" alt="Trash and debris removal from a property">
-            <div class="service-body">
-              <h3>Trash &amp; Debris Removal</h3>
-              <p>Clear clutter, waste, and leftover materials so spaces stay clean and inspection-ready.</p>
+        <article class="service-row reverse reveal">
+          <div class="service-copy">
+            <div class="service-meta">
+              <span class="service-num">02</span>
+              <span class="service-rule" aria-hidden="true"></span>
             </div>
-          </article>
+            <h3>Property Condition Checks</h3>
+            <p>
+              Document issues early and prioritize work so maintenance stays proactive,
+              helping owners catch concerns before they become costly repairs.
+            </p>
+            <a class="service-link" href="#contact">Request this service</a>
+          </div>
+          <figure class="service-media">
+            <img src="assets/images/inspection.jpg" alt="Property condition inspection and documentation" width="1100" height="733" loading="lazy" decoding="async">
+          </figure>
+        </article>
 
-          <article class="service-card reveal">
-            <img src="assets/images/repair.jpg" alt="Handyman completing a repair on site">
-            <div class="service-body">
-              <h3>Handyman Work</h3>
-              <p>From quick fixes to larger punch-list items, our crew handles the details that keep properties functional.</p>
+        <article class="service-row reveal">
+          <div class="service-copy">
+            <div class="service-meta">
+              <span class="service-num">03</span>
+              <span class="service-rule" aria-hidden="true"></span>
             </div>
-          </article>
+            <h3>Interior Cleaning</h3>
+            <p>
+              Refresh interiors with thorough cleaning that leaves spaces presentable,
+              orderly, and ready for showings, turnover, or new occupancy.
+            </p>
+            <a class="service-link" href="#contact">Request this service</a>
+          </div>
+          <figure class="service-media">
+            <img src="assets/images/interior-cleaning.jpg" alt="Interior cleaning of a residential property" width="1100" height="733" loading="lazy" decoding="async">
+          </figure>
+        </article>
 
-          <article class="service-card reveal">
-            <img src="assets/images/gutter-cleaning.jpg" alt="Gutter cleaning on a residential roof">
-            <div class="service-body">
-              <h3>Gutter Cleaning</h3>
-              <p>Protect fascia, foundations, and drainage with thorough gutter clearing and minor flow checks.</p>
+        <article class="service-row reverse reveal">
+          <div class="service-copy">
+            <div class="service-meta">
+              <span class="service-num">04</span>
+              <span class="service-rule" aria-hidden="true"></span>
             </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/snow-removal.jpg" alt="Snow cleared from a driveway and walkway">
-            <div class="service-body">
-              <h3>Winterization</h3>
-              <p>Prepare properties for cold weather with protective measures that reduce freeze-related risk.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/siding-wall.jpg" alt="Siding and wall replacement work">
-            <div class="service-body">
-              <h3>Siding &amp; Wall Replacement</h3>
-              <p>Refresh damaged exterior surfaces and restore a clean, weather-ready building envelope.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/discoloration.jpg" alt="Exterior discoloration treatment">
-            <div class="service-body">
-              <h3>Discoloration Treatment</h3>
-              <p>Address staining and surface discoloration so exteriors look cared for and marketable.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/roof-repair.jpg" alt="Residential roof repair">
-            <div class="service-body">
-              <h3>Roof Repair</h3>
-              <p>Stabilize leaks and weather damage with practical roof repairs that protect the structure below.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/renovation.jpg" alt="Home renovation and remodeling">
-            <div class="service-body">
-              <h3>Renovation &amp; Remodeling</h3>
-              <p>Improve interiors and exteriors with scoped updates that raise usability and presentation.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/appliance.jpg" alt="Appliance servicing and maintenance">
-            <div class="service-body">
-              <h3>Appliance Servicing</h3>
-              <p>Keep essential appliances in working order for turnovers, tenants, and owner-occupied homes.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/plumbing-electrical.jpg" alt="Plumbing and electrical maintenance">
-            <div class="service-body">
-              <h3>Plumbing &amp; Electrical</h3>
-              <p>Support safe, reliable systems with targeted plumbing and electrical maintenance tasks.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/carpentry.jpg" alt="Carpentry and woodwork repairs">
-            <div class="service-body">
-              <h3>Carpentry</h3>
-              <p>Repair framing details, trim, doors, and custom woodwork with clean, durable craftsmanship.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/painting.jpg" alt="Interior and exterior painting">
-            <div class="service-body">
-              <h3>Interior &amp; Exterior Painting</h3>
-              <p>Refresh walls and exteriors with professional finishes that elevate overall property appeal.</p>
-            </div>
-          </article>
-
-          <article class="service-card reveal">
-            <img src="assets/images/inspection.jpg" alt="Property inspection documentation">
-            <div class="service-body">
-              <h3>Property Condition Checks</h3>
-              <p>Document issues early and prioritize work so maintenance stays proactive, not reactive.</p>
-            </div>
-          </article>
-        </div>
+            <h3>Initial Services</h3>
+            <p>
+              Start each property right with foundational first-pass care that prepares
+              it for ongoing upkeep and a clear, reliable service plan.
+            </p>
+            <a class="service-link" href="#contact">Request this service</a>
+          </div>
+          <figure class="service-media">
+            <img src="assets/images/initial-services.jpg" alt="Initial property service setup and preparation" width="1100" height="733" loading="lazy" decoding="async">
+          </figure>
+        </article>
       </div>
     </section>
 
@@ -192,7 +151,7 @@
     <section class="section" id="about">
       <div class="container about-grid">
         <div class="about-visual reveal">
-          <img src="assets/images/service.jpg" alt="BILSTRUC LLC team performing property maintenance">
+          <img src="assets/images/service.jpg" alt="BILSTRUC LLC team performing property maintenance" width="1100" height="733" loading="lazy" decoding="async">
           <div class="about-accent">
             <strong>Owner-led</strong>
             <span>Reliable field service with clear communication</span>
@@ -209,9 +168,9 @@
             accountability, and a commitment to clean results.
           </p>
           <p>
-            Whether you need routine upkeep, urgent repairs, vacancy preparation, or
-            full preservation support, we coordinate the right work at the right time—
-            so your properties stay protected and presentable.
+            Whether you need landscaping, a property condition check, interior cleaning,
+            or initial services to get a property started right, we coordinate the work
+            clearly—so your properties stay protected and presentable.
           </p>
           <ul class="about-points">
             <li>Detail-driven crews that respect property and neighbors</li>
@@ -257,9 +216,9 @@
             <div class="faq-answer">
               <div class="faq-answer-inner">
                 <p>
-                  Our team handles landscaping, debris removal, handyman repairs, painting,
-                  roof and siding work, winterization, plumbing and electrical support,
-                  remodeling assistance, and ongoing property maintenance.
+                  We specialize in four core services: Landscaping, Property Condition Checks,
+                  Interior Cleaning, and Initial Services—delivered with clear communication
+                  and careful attention to each property.
                 </p>
               </div>
             </div>
@@ -401,7 +360,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/images/logo.png" alt="BILSTRUC LLC">
+          <img src="assets/images/logo.png" alt="BILSTRUC LLC" width="280" height="280" loading="lazy" decoding="async">
           <p>
             Property maintenance and preservation built around reliability,
             clear updates, and lasting results.
@@ -421,14 +380,12 @@
         </div>
 
         <div class="footer-col">
-          <h4>Core services</h4>
+          <h4>Our services</h4>
           <ul>
             <li><a href="#services">Landscaping</a></li>
-            <li><a href="#services">Debris Removal</a></li>
-            <li><a href="#services">Handyman Work</a></li>
-            <li><a href="#services">Roof Repair</a></li>
-            <li><a href="#services">Painting</a></li>
-            <li><a href="#services">Winterization</a></li>
+            <li><a href="#services">Property Condition Checks</a></li>
+            <li><a href="#services">Interior Cleaning</a></li>
+            <li><a href="#services">Initial Services</a></li>
           </ul>
         </div>
 
@@ -461,6 +418,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
